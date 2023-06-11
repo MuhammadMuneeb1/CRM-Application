@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Graphik-Regular;
+  background-color: #007bff;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 20px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+/* Add a green gradient background */
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #020381 0%, #2874fc 100%);
+  opacity: 0;
+  border-radius: inherit;
+}
+
+.angle {
+  color: #19e58c;
+}
+
+/* STEP 1: Sign-In */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #fffdfa;
+  position: relative;
+  float: left;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+button {
+  background-color: #19e58c;
+  color: #fffdfa;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: large;
+}
+
+.forgot-password,
+.signup-link {
+  margin-top: 10px;
+}
+
+.forgot-password a,
+.signup-link a {
+  color: #020381;
+  text-decoration: underline;
+}
+
+/* STEP 2: Forget-Password */
+.success {
+  color: #19e58c;
+}
+
+.error {
+  color: red;
+}
+
+/* STEP 3: Sign-Up */
+.signin-link {
+  margin-top: 10px;
+}
+
+.signin-link a {
+  color: #020381;
+  text-decoration: underline;
+}
+
+input {
+  border-color: #000000;
+  border-radius: 10px;
+  background-color: #fff;
+}
